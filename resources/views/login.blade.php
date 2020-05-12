@@ -21,7 +21,7 @@
                         <input type="hidden" name="_token" value="{{ @csrf_token() }}">
                         <div class="form-group row">
                             <label for="colFormLabelLg">Username</label>
-                            <input type="text" name="username" required placeholder="First Name" value="{{ old('username') }}" class="form-control form-control-lg">
+                            <input type="text" name="username" required placeholder="First Name" value="{{ old('username') }}" class="form-control form-control-lg @error('username') is-invalid @enderror">
                             <div class="invalid-feedback">
                                 Please Provide a valid Username
                             </div>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="colFormLabelLg" >Password</label>
-                            <input type="password" name="password" required placeholder="********" class="form-control form-control-lg" placeholder="col-form-label-lg">
+                            <input type="password" name="password" required placeholder="********" class="form-control form-control-lg @error('password') is-invalid @enderror" placeholder="col-form-label-lg">
                             <div class="invalid-feedback">
                                 Please Provide a Password
                             </div>
@@ -49,7 +49,7 @@
                             <button type="submit" id="submit" class="btn btn-dark  btn-block btn-lg">Login</button>
                         </div>
                         <p>Didn't have an account <a href="{{ URL::to('register') }}">Sign up here</a> </p>
-                        <p><a href="{{ URL::to('forgotten-password') }}">Forgotten Password</a> </p>
+{{--                        <p><a href="{{ URL::to('forgotten-password') }}">Forgotten Password</a> </p>--}}
                     </form>
                 </div>
             </div>

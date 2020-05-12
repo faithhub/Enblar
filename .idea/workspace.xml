@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc1bb27-9307-4d44-99d8-59de1574e959" name="Default Changelist" comment="" />
+    <list default="true" id="9bc1bb27-9307-4d44-99d8-59de1574e959" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/reset-my-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reset-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/ReplyMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/analytics/last-3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/analytics/Audience-Overview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/analytics/last-30.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/analytics/Users-Analytics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/analytics/last-7.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/analytics/Website-traffic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/forgotten-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forgotten-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hello.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/read.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reply-name.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +138,16 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-analytics" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bHyJFQMBn0jy8RFso2o6bkkaDC" />
@@ -129,16 +164,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views" />
-      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views\newsletter" />
-      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views\settings" />
-      <recent name="C:\xampp\htdocs\laravel\project2\project1\routes" />
-      <recent name="C:\xampp\htdocs\laravel\project2\project1\public\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views" />
       <recent name="C:\xampp\htdocs\laravel\project2\project1\public\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views" />
+      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views\analytics" />
+      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views\newsletter" />
+      <recent name="C:\xampp\htdocs\laravel\project2\project1\resources\views\settings" />
+      <recent name="C:\xampp\htdocs\laravel\project2\project1\routes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -182,7 +217,10 @@
       <workItem from="1588933924576" duration="12168000" />
       <workItem from="1588978578115" duration="22368000" />
       <workItem from="1589043457671" duration="424000" />
-      <workItem from="1589044079286" duration="1644000" />
+      <workItem from="1589044079286" duration="6379000" />
+      <workItem from="1589083067117" duration="19000" />
+      <workItem from="1589146817802" duration="8862000" />
+      <workItem from="1589227720748" duration="29617000" />
     </task>
     <servers />
   </component>
@@ -194,10 +232,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/index.blade.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

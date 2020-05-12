@@ -7,13 +7,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Analytics</h1>
+                        <h1>Website traffic</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item ">Analytics</li>
-                            <li class="breadcrumb-item active">Last 7 days</li>
+                            <li class="breadcrumb-item active">Website traffic</li>
                         </ol>
                     </div>
                 </div>
@@ -25,10 +25,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <section class="col-lg-9 connectedSortable ui-sortable">
+                        <section class="col-lg-12 connectedSortable ui-sortable">
                             <div class="card">
-                                <h2 style="margin-left:8px; margin-top:5px">Last 7 days analytics</h2>
-                                <iframe width="600" height="371" seamless="" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBG5zpJpILdRkQmY1X-JysUW1mm5oNjkv7dgzeqngwKDpsKeDujzWzffhq8wIBVA2jgqt8rZoVZBkk/pubchart?oid=279897215&amp;format=interactive"></iframe>
+                                <div style="padding:63% 0 0 0; position:relative;"><iframe src="https://app.databox.com/datawall/a02efd8dcb27851a8677377608fda09805eba6347?i" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                             </div>
                         </section>
                     </div>

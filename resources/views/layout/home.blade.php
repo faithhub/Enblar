@@ -169,21 +169,21 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="{{ url('last-3') }}" class="nav-link">
+                                <a href="{{ url('Users-Analytics') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Last 3 days</p>
+                                    <p>Users Analytics</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('last-7') }}" class="nav-link">
+                                <a href="{{ url('Website-traffic') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Last 7 days</p>
+                                    <p>Website traffic</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('last-30') }}" class="nav-link">
+                                <a href="{{ url('Audience-Overview') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Last 30 days</p>
+                                    <p>Audience Overview</p>
                                 </a>
                             </li>
                         </ul>
@@ -286,7 +286,7 @@
         <div class="float-right d-none d-sm-block">
             <b>Version</b> 3.0.4
         </div>
-        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+        <strong>Copyright &copy; 2014-2019 </strong> All rights
         reserved.
     </footer>
 

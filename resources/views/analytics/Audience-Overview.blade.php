@@ -6,13 +6,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Analytics</h1>
+                        <h1>Audience Overview</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item ">Analytics</li>
-                            <li class="breadcrumb-item active">Last 3 days</li>
+                            <li class="breadcrumb-item active">Audience Overview</li>
                         </ol>
                     </div>
                 </div>
@@ -26,8 +26,8 @@
                     <div class="col-md-12">
                         <section class="">
                             <div class="card">
-                                <h2 style="margin-left:8px; margin-top:5px">Last 3 days analytics</h2>
-                                <iframe width="765.5" height="473.33416666666665" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBG5zpJpILdRkQmY1X-JysUW1mm5oNjkv7dgzeqngwKDpsKeDujzWzffhq8wIBVA2jgqt8rZoVZBkk/pubchart?oid=2011639103&amp;format=interactive"></iframe>
+                                <div style="padding:63% 0 0 0; position:relative;"><iframe src="https://app.databox.com/datawall/e2f6bca421c0249be9247219ff554d3505eba6464?i" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
                             </div>
                         </section>
                     </div>

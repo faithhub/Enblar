@@ -1,14 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Customer;
+use App\Email;
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
-use Symfony\Component\Console\Input\Input;
 
 
 class UserController extends Controller
@@ -17,13 +18,18 @@ class UserController extends Controller
 //    {
 //        $this->middleware('auth')->except('create');
 //    }
-
+    public function index()
+    {
+        $email = Email::count();
+        $customer = Customer::count();
+        return view('dashboard/index')->with(['email' => $email, 'customer' => $customer]);
+    }
     public function create(Request $request)
     {
         $validate = $request->validate([
             'username' => 'required|min:3|alpha_num|max:15|unique:users',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6|max:15|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\X])(?=.*[!$#%@&+_*]).*$/',
+            'password' => 'required|min:6|max:15|confirmed|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$+%^&*-]).{6,}$/',
             'password_confirmation' => 'same:password'
         ]);
         $hash = Hash::make($request->password);

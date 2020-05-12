@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Routing\Middleware\UserAuth;
 use Illuminate\Routing\Middleware\AfterLoggedIn;
+use Spatie\Analytics\Period;
+
 //use Illuminate\Routing\Middleware\RevalidateBackHistory;
 
 /*
@@ -19,18 +21,10 @@ use Illuminate\Routing\Middleware\AfterLoggedIn;
     Route::get('/', function () {
             return view('welcome');
     });
-    Route::get('/home', function () {
-        return view('hello');
-    });
-    Route::get('/create', function () {
-        return view('create');
-    });
-    Route::get('/index', function () {
-        return view('dashboard/index');
-    });
-    Route::view('last-3', 'analytics/last-3');
-    Route::view('last-7', 'analytics/last-7');
-    Route::view('last-30', 'analytics/last-30');
+    Route::get('/index', 'UserController@index');
+    Route::view('Audience-Overview', 'analytics/Audience-Overview');
+    Route::view('Users-Analytics', 'analytics/Users-Analytics');
+    Route::view('Website-traffic', 'analytics/Website-traffic');
     Route::get('all-messages', 'MessagesController@allMessages');
     Route::get('message/{id}', 'MessagesController@message');
     Route::get('delete-message/{id}', 'MessagesController@deleteMessage');
@@ -66,13 +60,9 @@ use Illuminate\Routing\Middleware\AfterLoggedIn;
     Route::get('/update-profile', function () {
         return view('settings/update-profile');
     });
-//    Route::get('read', 'UserController@read');
 
     });
 
-
-
-    Route::post('forgotten-password', 'ForgotPasswordController@forgottenPassword');
     Route::post('register', 'UserController@create')->name('create');
     Route::get('logout', 'UserController@logout');
     Route::get('/register', function () {
@@ -82,13 +72,14 @@ use Illuminate\Routing\Middleware\AfterLoggedIn;
         return view('login');
     })->middleware('logged');
     Route::post('login', 'UserController@login');
-    Route::get('/forgotten-password', function () {
-        return view('forgotten-password');
-    })->middleware('logged');
-    Route::get('/reset', function () {
-        return view('auth/passwords/reset');
-    });
-    Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm')->name('password.reset');
+//    Route::view('/forgotten-password', 'forgotten-password');
+//    Route::get('/reset-password/{$token}', 'ForgotPasswordController@resetPassword')->name('reset-password');
+//    Route::get('/reset', function () {
+//        return view('auth/passwords/reset');
+//    });
+//      Route::post('forgotten-password', 'ForgotPasswordController@ValidatePasswordRequest');
+
+//Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm')->name('password.reset');
 
 //
 //Auth::routes();

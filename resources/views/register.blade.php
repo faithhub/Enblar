@@ -21,7 +21,7 @@
                         <input type="hidden" name="_token" value="{{ @csrf_token() }}">
                         <div class="form-group row">
                             <label for="colFormLabelLg">Username</label>
-                            <input type="text" name="username" required placeholder="First Name" value="{{ old('username') }}" class="form-control form-control-lg">
+                            <input type="text" name="username" required placeholder="First Name" value="{{ old('username') }}" class="form-control form-control-lg @error('username') is-invalid @enderror">
                             <div class="invalid-feedback">
                                 Please Provide a Unique Username
                             </div>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="colFormLabelLg" >Email</label>
-                            <input type="email" data-parsley-type="email" name="email" placeholder="Email"  value="{{ old('email') }}" class="form-control form-control-lg" required>
+                            <input type="email" data-parsley-type="email" name="email" placeholder="Email"  value="{{ old('email') }}" class="form-control form-control-lg @error('email') is-invalid @enderror" required>
                             <div class="invalid-feedback">
                                 Please Provide a valid Email
                             </div>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="colFormLabelLg" >Password</label>
-                            <input type="password" name="password" placeholder="********" class="form-control form-control-lg" placeholder="col-form-label-lg" required>
+                            <input type="password" name="password" placeholder="********" class="form-control form-control-lg @error('password') is-invalid @enderror" placeholder="col-form-label-lg" required>
                             <div class="invalid-feedback">
                                 Please Provide a Password
                             </div>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="colFormLabelLg">Confirm Password</label>
-                            <input type="password" name="password_confirmation" placeholder="********" class="form-control form-control-lg" placeholder="col-form-label-lg" required>
+                            <input type="password" name="password_confirmation" placeholder="********" class="form-control form-control-lg @error('password_confirmation') is-invalid @enderror" placeholder="col-form-label-lg" required>
                             <div class="invalid-feedback">
                                 Please Confirm Password
                             </div>
